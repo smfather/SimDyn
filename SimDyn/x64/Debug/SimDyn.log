@@ -1,25 +1,23 @@
-﻿빌드 시작: 2015-12-31 오전 12:20:26
+﻿빌드 시작: 2015-12-31 오후 5:27:16
      1>2 노드의 "C:\SimDyn\SimDyn\SimDyn.vcxproj" 프로젝트(Build 대상)입니다.
-     1>CustomBuild:
-         Moc'ing simdyn.h...
-       ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I.\GeneratedFiles /I. /IC:\Qt\5.4\msvc2013_64_opengl\include /I.\GeneratedFiles\Debug /IC:\Qt\5.4\msvc2013_64_opengl\include\QtCore /IC:\Qt\5.4\msvc2013_64_opengl\include\QtGui /IC:\Qt\5.4\msvc2013_64_opengl\include\QtOpenGL /IC:\Qt\5.4\msvc2013_64_opengl\include\QtWidgets /IC:\SimDyn\SimDyn\Include /Zi /nologo /W1 /WX- /Od /D UNICODE /D WIN32 /D WIN64 /D QT_DLL /D QT_CORE_LIB /D QT_GUI_LIB /D QT_OPENGL_LIB /D QT_WIDGETS_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt GeneratedFiles\Debug\moc_simdyn.cpp Source\log.cpp Source\main.cpp Source\simdyn.cpp
-         moc_simdyn.cpp
-         log.cpp
-         main.cpp
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I.\GeneratedFiles /I. /IC:\Qt\5.4\msvc2013_64_opengl\include /I.\GeneratedFiles\Debug /IC:\Qt\5.4\msvc2013_64_opengl\include\QtCore /IC:\Qt\5.4\msvc2013_64_opengl\include\QtGui /IC:\Qt\5.4\msvc2013_64_opengl\include\QtOpenGL /IC:\Qt\5.4\msvc2013_64_opengl\include\QtWidgets /IC:\SimDyn\SimDyn\Include /I"C:\OpenCASCADE6.9.1-vc12-64\opencascade-6.9.1\inc" /Zi /nologo /W1 /WX- /Od /D UNICODE /D WIN32 /D WIN64 /D QT_DLL /D QT_CORE_LIB /D QT_GUI_LIB /D QT_OPENGL_LIB /D QT_WIDGETS_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt /DWNT Source\simdyn.cpp
          simdyn.cpp
-         코드를 생성하고 있습니다...
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I.\GeneratedFiles /I. /IC:\Qt\5.4\msvc2013_64_opengl\include /I.\GeneratedFiles\Debug /IC:\Qt\5.4\msvc2013_64_opengl\include\QtCore /IC:\Qt\5.4\msvc2013_64_opengl\include\QtGui /IC:\Qt\5.4\msvc2013_64_opengl\include\QtOpenGL /IC:\Qt\5.4\msvc2013_64_opengl\include\QtWidgets /IC:\SimDyn\SimDyn\Include /Zi /nologo /W1 /WX- /Od /D UNICODE /D WIN32 /D WIN64 /D QT_DLL /D QT_CORE_LIB /D QT_GUI_LIB /D QT_OPENGL_LIB /D QT_WIDGETS_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt GeneratedFiles\qrc_simdyn.cpp
-         qrc_simdyn.cpp
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\SimDyn\x64\Debug\\SimDyn.exe" /NOLOGO /LIBPATH:C:\Qt\5.4\msvc2013_64_opengl\lib qtmaind.lib Qt5Cored.lib Qt5Guid.lib Qt5OpenGLd.lib opengl32.lib glu32.lib Qt5Widgetsd.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\SimDyn\x64\Debug\SimDyn.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\SimDyn\x64\Debug\SimDyn.lib" /MACHINE:X64 x64\Debug\moc_simdyn.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\SimDyn\x64\Debug\\SimDyn.exe" /NOLOGO /LIBPATH:C:\Qt\5.4\msvc2013_64_opengl\lib /LIBPATH:"C:\OpenCASCADE6.9.1-vc12-64\opencascade-6.9.1\win64\vc12\libd" qtmaind.lib Qt5Cored.lib Qt5Guid.lib Qt5OpenGLd.lib opengl32.lib glu32.lib Qt5Widgetsd.lib TKernel.lib PTKernel.lib TKMath.lib TKService.lib TKV3d.lib TKOpenGl.lib TKBRep.lib TKIGES.lib TKSTL.lib TKVRML.lib TKSTEP.lib TKSTEPAttr.lib TKSTEP209.lib TKSTEPBase.lib TKShapeSchema.lib TKGeomBase.lib TKGeomAlgo.lib TKG3d.lib TKG2d.lib TKXSBase.lib TKPShape.lib TKShHealing.lib TKHLR.lib TKTopAlgo.lib TKMesh.lib TKPrim.lib TKCDF.lib TKBool.lib TKBO.lib TKFillet.lib TKOffset.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\SimDyn\x64\Debug\SimDyn.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\SimDyn\x64\Debug\SimDyn.lib" /MACHINE:X64 x64\Debug\moc_DocumentCommon.obj
+         x64\Debug\moc_MDIWindow.obj
+         x64\Debug\moc_simdyn.obj
+         x64\Debug\moc_View.obj
          x64\Debug\qrc_simdyn.obj
+         x64\Debug\DocumentCommon.obj
          x64\Debug\log.obj
          x64\Debug\main.obj
          x64\Debug\simdyn.obj
+         x64\Debug\View.obj
+         x64\Debug\MDIWindow.obj
          SimDyn.vcxproj -> C:\SimDyn\x64\Debug\SimDyn.exe
      1>"C:\SimDyn\SimDyn\SimDyn.vcxproj" 프로젝트를 빌드했습니다(Build 대상).
 
 빌드했습니다.
 
-경과 시간: 00:00:07.16
+경과 시간: 00:00:02.04

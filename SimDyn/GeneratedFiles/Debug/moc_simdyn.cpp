@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'simdyn.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.4.1)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.4.2)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -12,15 +12,15 @@
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'simdyn.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.4.1. It"
+#error "This file was generated using the moc from 5.4.2. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
 
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_SimDyn_t {
-    QByteArrayData data[5];
-    char stringdata[37];
+    QByteArrayData data[6];
+    char stringdata[66];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -30,13 +30,15 @@ struct qt_meta_stringdata_SimDyn_t {
 static const qt_meta_stringdata_SimDyn_t qt_meta_stringdata_SimDyn = {
     {
 QT_MOC_LITERAL(0, 0, 6), // "SimDyn"
-QT_MOC_LITERAL(1, 7, 8), // "slot_new"
-QT_MOC_LITERAL(2, 16, 0), // ""
-QT_MOC_LITERAL(3, 17, 9), // "slot_open"
-QT_MOC_LITERAL(4, 27, 9) // "slot_save"
+QT_MOC_LITERAL(1, 7, 8), // "onNewDoc"
+QT_MOC_LITERAL(2, 16, 15), // "DocumentCommon*"
+QT_MOC_LITERAL(3, 32, 0), // ""
+QT_MOC_LITERAL(4, 33, 13), // "onCloseWindow"
+QT_MOC_LITERAL(5, 47, 18) // "onSelectionChanged"
 
     },
-    "SimDyn\0slot_new\0\0slot_open\0slot_save"
+    "SimDyn\0onNewDoc\0DocumentCommon*\0\0"
+    "onCloseWindow\0onSelectionChanged"
 };
 #undef QT_MOC_LITERAL
 
@@ -54,12 +56,12 @@ static const uint qt_meta_data_SimDyn[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    0,   29,    2, 0x08 /* Private */,
-       3,    0,   30,    2, 0x08 /* Private */,
-       4,    0,   31,    2, 0x08 /* Private */,
+       1,    0,   29,    3, 0x08 /* Private */,
+       4,    0,   30,    3, 0x08 /* Private */,
+       5,    0,   31,    3, 0x0a /* Public */,
 
  // slots: parameters
-    QMetaType::Void,
+    0x80000000 | 2,
     QMetaType::Void,
     QMetaType::Void,
 
@@ -71,13 +73,13 @@ void SimDyn::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void
     if (_c == QMetaObject::InvokeMetaMethod) {
         SimDyn *_t = static_cast<SimDyn *>(_o);
         switch (_id) {
-        case 0: _t->slot_new(); break;
-        case 1: _t->slot_open(); break;
-        case 2: _t->slot_save(); break;
+        case 0: { DocumentCommon* _r = _t->onNewDoc();
+            if (_a[0]) *reinterpret_cast< DocumentCommon**>(_a[0]) = _r; }  break;
+        case 1: _t->onCloseWindow(); break;
+        case 2: _t->onSelectionChanged(); break;
         default: ;
         }
     }
-    Q_UNUSED(_a);
 }
 
 const QMetaObject SimDyn::staticMetaObject = {
