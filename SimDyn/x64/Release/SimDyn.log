@@ -1,0 +1,29 @@
+﻿빌드 시작: 2016-01-06 오전 3:21:27
+     1>2 노드의 "C:\SimDyn\SimDyn\SimDyn.vcxproj" 프로젝트(Build 대상)입니다.
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\SimDyn\x64\Release\\SimDyn.exe" /NOLOGO /LIBPATH:C:\Qt\5.4\msvc2013_64_opengl\lib /LIBPATH:"C:\OpenCASCADE6.9.1-vc12-64\opencascade-6.9.1\win64\vc12\lib" qtmain.lib Qt5Core.lib Qt5Gui.lib Qt5OpenGL.lib opengl32.lib glu32.lib Qt5Widgets.lib TKernel.lib PTKernel.lib TKMath.lib TKService.lib TKV3d.lib TKOpenGl.lib TKBRep.lib TKIGES.lib TKSTL.lib TKVRML.lib TKSTEP.lib TKSTEPAttr.lib TKSTEP209.lib TKSTEPBase.lib TKShapeSchema.lib TKGeomBase.lib TKGeomAlgo.lib TKG3d.lib TKG2d.lib TKXSBase.lib TKPShape.lib TKShHealing.lib TKHLR.lib TKTopAlgo.lib TKMesh.lib TKPrim.lib TKCDF.lib TKBool.lib TKBO.lib TKFillet.lib TKOffset.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"C:\SimDyn\x64\Release\SimDyn.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\SimDyn\x64\Release\SimDyn.lib" /MACHINE:X64 x64\Release\qrc_simdyn.obj
+         x64\Release\moc_Application.obj
+         x64\Release\moc_DocumentCommon.obj
+         x64\Release\moc_Material.obj
+         x64\Release\moc_MDIWindow.obj
+         x64\Release\moc_simdyn.obj
+         x64\Release\moc_Translate.obj
+         x64\Release\moc_Transparency.obj
+         x64\Release\moc_View.obj
+         x64\Release\Application.obj
+         x64\Release\DocumentCommon.obj
+         x64\Release\log.obj
+         x64\Release\main.obj
+         x64\Release\Material.obj
+         x64\Release\simdyn.obj
+         x64\Release\Translate.obj
+         x64\Release\Transparency.obj
+         x64\Release\View.obj
+         x64\Release\MDIWindow.obj
+            C:\SimDyn\x64\Release\SimDyn.lib 라이브러리 및 C:\SimDyn\x64\Release\SimDyn.exp 개체를 생성하고 있습니다.
+         SimDyn.vcxproj -> C:\SimDyn\x64\Release\SimDyn.exe
+     1>"C:\SimDyn\SimDyn\SimDyn.vcxproj" 프로젝트를 빌드했습니다(Build 대상).
+
+빌드했습니다.
+
+경과 시간: 00:00:00.58

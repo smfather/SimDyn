@@ -15,36 +15,65 @@ class SimDyn : public QMainWindow
 	Q_OBJECT
 
 public:
-	enum { FILE_NEW_ID = 0, FILE_CLOSE_ID,};
+	enum { FILE_NEW_ID = 0, FILE_CLOSE_ID, FILE_PREF_USE_VBO, FILE_QUIT, VIEW_TOOL, VIEW_STATUS, HELP_ABOUT};
+	enum { ToolWireframeId, ToolShadingId, ToolColorId, ToolMaterialId, ToolTransparencyId, ToolDeleteId };
 
 	SimDyn(QWidget *parent = 0);
 	~SimDyn();
 
 	static QMdiArea* getWorkspace();
 	static SimDyn* getApplication();
+	QList<QAction*>*                 getToolActions();
+	QList<QAction*>*                 getMaterialActions();
+	virtual void                     updateFileActions();
 
-private slots:
-	DocumentCommon* onNewDoc();
-	void onCloseWindow();
+public slots:
+	DocumentCommon*					onNewDoc();
+	void							onCloseWindow();
+	void                            onUseVBO();
+	virtual void                    onCloseDocument(DocumentCommon* theDoc);
+	virtual void                    onSelectionChanged();
+	virtual void                    onAbout();
+	void                            onViewToolBar();
+	void                            onViewStatusBar();
+	void                            onToolAction();
+	void                            onCreateNewView();
+	void                            onWindowActivated(QWidget * w);
+	void                            windowsMenuAboutToShow();
+	void                            windowsMenuActivated(bool checked/*int id*/);
+	void                            onSetMaterial(int theMaterial);
 // 	void slot_open();
 // 	void slot_save();
 
 protected:
 	virtual DocumentCommon* createNewDocument();
 
-public slots:
-	virtual void                    onSelectionChanged();
+private:
+	bool SetUp();
+	void                            createStandardOperations();
+	void                            createCasCadeOperations();
+	void                            createWindowPopup();
+
+protected:
+	virtual void                    resizeEvent(QResizeEvent*);
+	bool                            isDocument();
+	QMenu*                          getFilePopup();
+	QAction*                        getFileSeparator();
+	QToolBar*                       getCasCadeBar();
 
 private:
-// 	QAction *act_new;
-// 	QAction *act_open;
-// 	QAction *act_save;
-	int myNbDocuments;
-	QList<QAction*> myStdActions;
-	QToolBar* myStdToolBar;
+	int                             myNbDocuments;
+	bool                            myIsDocuments;
+	QAction*                        myFileSeparator;
+	QList<QAction*>					myStdActions;
+	QList<QAction*>                 myToolActions;
+	QList<QAction*>                 myMaterialActions;
+	//QList<DocumentCommon*>          myDocuments;
 
-	QMenu* myFilePopup;
-	bool SetUp();
+	QToolBar*						myStdToolBar;
+	QToolBar*                       myCasCadeBar;
+	QMenu*                          myFilePopup;
+	QMenu*                          myWindowPopup;
 
 protected:
 	QList<DocumentCommon*>          myDocuments;

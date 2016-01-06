@@ -19,11 +19,32 @@ public:
 	DocumentCommon(const int, SimDyn*);
 	~DocumentCommon();
 
-	SimDyn* getApplication();
+	SimDyn*						   getApplication();
 	Handle(AIS_InteractiveContext) getContext();
+	void                           removeView(MDIWindow*);
+	void                           removeViews();
+	int                            countOfWindow();
+	void                           fitAll();
 
-	public slots:
-	virtual void onCreateNewView();
+protected:
+	virtual MDIWindow*                   createNewMDIWindow();
+
+signals:
+	void                           selectionChanged();
+	void                           sendCloseDocument(DocumentCommon*);
+
+public slots:
+	virtual void                   onCloseView(MDIWindow*);
+	virtual void				   onCreateNewView();
+	virtual void                   onMaterial();
+	virtual void                   onMaterial(int);
+	virtual void                   onDelete();
+
+	void                           onWireframe();
+	void                           onShading();
+	void                           onColor();
+	void                           onTransparency();
+	void                           onTransparency(int);
 
 private:
 	Handle(V3d_Viewer) Viewer(const Standard_ExtString theName,
@@ -32,9 +53,6 @@ private:
 							  const V3d_TypeOfOrientation theViewProj,
 							  const Standard_Boolean theComputedMode,
 							  const Standard_Boolean theDefaultComputedMode);
-
-protected:
-	virtual MDIWindow*                   createNewMDIWindow();
 
 protected:
 	SimDyn *myApp;

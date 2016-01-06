@@ -10,5 +10,7 @@
         <file>Resources/open.png</file>
         <file>Resources/save.png</file>
         <file>Resources/close.png</file>
+        <file>Resources/cursor_rotate.png</file>
+        <file>Resources/cursor_zoom.png</file>
     </qresource>
 </RCC>
